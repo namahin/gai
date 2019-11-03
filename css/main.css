@@ -29,6 +29,32 @@ td {
     font-family: NotoSansBengali;
 }
 
+.input-title {
+    background: white;
+    margin: 0;
+    position: absolute;
+    top: 1px;
+    padding: 7px 0px;
+    left: 27px;
+    right: 5px;
+}
+
+.input-title a {position: absolute;top: 0;left: -10px;right: -5px;bottom: 0;opacity: 0;cursor: auto;}
+.input-title a:hover{
+    opacity: 0;
+}
+
+.input-title p {
+    font-family: 'Poppins', sans-serif;
+    color:
+        rgb(96, 96, 96);
+    font-size: 15px;
+    font-weight: 400;
+    border-color:
+        rgb(96, 96, 96);
+    border-radius: 5px;
+}
+
 .gai-video {
     width: 100%;
     height: 382px;
@@ -46,11 +72,15 @@ td {
     z-index: 10;
     top: 0;
     bottom: 0;
-    transition: linear .2s !important;;
+    transition: linear .2s !important;
+    ;
 }
-.gai-video:hover{
-    transition: linear .2s !important;;
+
+.gai-video:hover {
+    transition: linear .2s !important;
+    ;
 }
+
 .gai-video a i {
     position: absolute;
     top: 50%;
@@ -5262,11 +5292,12 @@ textarea {
 }
 
 .gallery-title {
-    background: #1CC0EC;
-    color: white;
-    padding: 10px 15px 2px;
+    background: #f4f4f4;
+    padding: 7px 13px 0px;
     font-weight: normal;
     margin: 15px 0;
+    font-size: 20px;
+    color: #333;
 }
 
 
