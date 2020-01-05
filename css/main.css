@@ -10,7 +10,7 @@
     padding: 0;
     margin: 0;
     outline: 0;
-    font-family: NotoSansBengali;
+    font-family: 'NotoSansBengali', 'Poppins', sans-serif;
 }
 
 a,
@@ -26,21 +26,30 @@ h6,
 option,
 th,
 td {
-    font-family: NotoSansBengali;
+    font-family: 'NotoSansBengali', 'Poppins', sans-serif;
 }
 
 .input-title {
     background: white;
     margin: 0;
     position: absolute;
-    top: 1px;
-    padding: 7px 0px;
+    top: 2px;
+    padding: 6px 0px;
     left: 27px;
     right: 5px;
 }
 
-.input-title a {position: absolute;top: 0;left: -10px;right: -5px;bottom: 0;opacity: 0;cursor: auto;}
-.input-title a:hover{
+.input-title a {
+    position: absolute;
+    top: 0;
+    left: -10px;
+    right: -5px;
+    bottom: 0;
+    opacity: 0;
+    cursor: auto;
+}
+
+.input-title a:hover {
     opacity: 0;
 }
 
@@ -117,25 +126,29 @@ td {
 
 /* custop nav */
 .gai-nav {
-    background: #2C2B5E;
-    border: 2px solid #1CC0EC;
-    color: #1CC0EC;
+    background: #1CC0EC;
+    border: 5px solid #1CC0EC;
+    color: white;
     transition: linear .2s;
+    border-radius: 15px;
+    opacity: .8;
 }
 
 
 .gai-nav:hover {
-    background: #1CC0EC;
+    background: #2C2B5E;
     border-color: #2C2B5E;
-    color: #2C2B5E;
     transition: linear .2s;
+    opacity: 1;
+    color: white;
 }
 
 .gai-nav:focus {
-    background: #1CC0EC;
+    background: #2C2B5E;
     border-color: #2C2B5E;
-    color: #2C2B5E;
+    color: white;
     transition: linear .2s;
+    opacity: 1;
 }
 
 .panel-gai-notice {
@@ -248,7 +261,7 @@ h6 {
 .scroll-up:hover {
     transition: linear .2s;
     background: #2C2B5E;
-    bottom: 20px
+    bottom: 15px;
 }
 
 .scroll-up i {
@@ -367,9 +380,6 @@ label {
 mark {
     background: #4fc1f0 none repeat scroll 0 0;
     color: #ffffff;
-}
-
-font-weight: 600;
 }
 
 .f-left {
@@ -1763,6 +1773,8 @@ textarea {
 
 .header-area {
     background: transparent none repeat scroll 0 0;
+    box-shadow: 0 0 25px 0 #2C2B5E38;
+    position: relative;
 }
 
 .fixed {
@@ -2732,8 +2744,9 @@ textarea {
 /*  6. Courses CSS
 /*----------------------------------------*/
 .courses-area {
-    padding: 100px 0;
+    padding-top: 100px;
     background: #fafafa;
+    padding-bottom: 70px;
 }
 
 .section-title h2 {
@@ -2784,6 +2797,7 @@ textarea {
 
 .single-course {
     background: white;
+    margin-bottom: 30px;
 }
 
 .course-img {
@@ -5670,4 +5684,159 @@ textarea {
 .upload-result__content {
     word-break: break-all;
     overflow-wrap: break-word;
+}
+
+/* success massege page start from here */
+.success-massege-page {
+    background-image: url(../img/success-message-background.jpg);
+    background-position: center top;
+    background-size: cover;
+}
+
+.success-massege-card {
+    text-align: center;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 0 15px #80808050;
+    padding: 50px;
+    margin-top: 100px;
+    margin-bottom: 30px;
+}
+
+.success-massege-card img {
+    margin-bottom: 30px;
+}
+
+.success-massege-card h2 {
+    color: #FA0084;
+}
+
+.success-massege-card h4 {
+    color: #C769F2;
+}
+
+.success-massege-card ol {
+    list-style: none;
+    font-size: 15px;
+}
+
+.success-massege-card ol li {
+    font-size: 16px;
+}
+
+.success-massege-card ol li b {
+    font-weight: 500;
+    color: #3A29FE;
+}
+
+.success-massege-card p {
+    line-height: 1.3;
+    font-size: 16px;
+}
+
+.success-massege-card ul {}
+
+.success-massege-card ul li {
+    display: inline-block;
+    padding: 0 6px;
+    font-size: 15px;
+}
+
+.success-massege-card ul li a {
+    font-size: 16px;
+}
+
+/* success massege page end */
+/* not-found-page */
+.not-found-sec {
+    padding-bottom: 45px;
+    background: #fafafa;
+    padding-top: 100px;
+}
+
+.not-found-sec img {}
+
+.not-found-sec input {
+    overflow: hidden;
+    box-shadow: 0 3px 10px #3a8ea830;
+}
+
+.not-found-sec h3 {
+    position: absolute;
+    width: 310px;
+    color: #03AA99;
+    font-size: 32px;
+    top: 15%;
+}
+
+.not-found-sec .newsletter-form {
+    position: relative;
+    bottom: 60px;
+    margin-right: 27px;
+}
+
+/* not-found-page */
+
+/* login modal  */
+.login-modal {
+    margin-top: 120px;
+    background: #fff;
+}
+
+.login-modal .modal-header {
+    position: relative;
+    padding: 15px 30px;
+}
+
+.login-modal .modal-header h5 {
+    font-size: 25px;
+    text-align: center;
+    font-weight: normal;
+}
+
+.login-modal .modal-header button {
+    margin: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px;
+}
+
+.login-modal .modal-header span {}
+
+.login-modal .login-modal-switcher {
+    padding: 30px 30px;
+    padding-top: 0;
+}
+
+.login-modal .login-modal-switcher .uk-subnav {
+    margin: 0;
+    border-bottom: 1px solid #8080805c;
+}
+
+.login-modal .login-modal-switcher .uk-subnav li {
+    padding-left: 0;
+}
+
+.login-modal .login-modal-switcher .uk-subnav li a {
+    font-size: 16px;
+    padding: 5px 20px;
+}
+
+.login-modal-switcher-item {
+    padding-top: 10px;
+}
+
+.login-modal-switcher-item li {}
+
+.login-modal-switcher-item li form {}
+
+.login-modal-switcher-item li form label {font-size: 15px;}
+
+.login-modal-switcher-item li form input {
+    font-size: 15px;
+}
+
+.login-modal-switcher-item li form button {
+    font-size: 15px;
 }
