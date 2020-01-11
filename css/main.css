@@ -10,7 +10,7 @@
     padding: 0;
     margin: 0;
     outline: 0;
-    font-family: 'NotoSansBengali', 'Poppins', sans-serif;
+    font-family: 'Poppins', 'NotoSansBengali', sans-serif;
 }
 
 a,
@@ -26,7 +26,7 @@ h6,
 option,
 th,
 td {
-    font-family: 'NotoSansBengali', 'Poppins', sans-serif;
+    font-family: 'Poppins', 'NotoSansBengali', sans-serif;
 }
 
 .input-title {
@@ -54,13 +54,11 @@ td {
 }
 
 .input-title p {
-    font-family: 'Poppins', sans-serif;
-    color:
-        rgb(96, 96, 96);
+    font-family: 'Poppins', 'NotoSansBengali', sans-serif;
+    color: #606060;
     font-size: 15px;
     font-weight: 400;
-    border-color:
-        rgb(96, 96, 96);
+    border-color: #606060;
     border-radius: 5px;
 }
 
@@ -231,7 +229,7 @@ body {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    font-family: NotoSansBengali;
+    font-family: 'Poppins', 'NotoSansBengali', sans-serif;
 }
 
 a,
@@ -239,7 +237,7 @@ p,
 h4,
 h5,
 h6 {
-    font-family: NotoSansBengali;
+    font-family: 'Poppins', 'NotoSansBengali', sans-serif;
 }
 
 .scroll-up {
@@ -405,7 +403,7 @@ ul {
 ::-webkit-input-placeholder {
     /* Chrome/Opera/Safari */
     color: #969696;
-    font-family: 'NotoSansBengali', 'Poppins', sans-serif;
+    font-family: 'Poppins', 'NotoSansBengali', sans-serif;
 }
 
 ::-moz-placeholder {
@@ -413,19 +411,19 @@ ul {
     color: #969696;
     opacity: 1;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
-    font-family: 'NotoSansBengali', 'Poppins', sans-serif;
+    font-family: 'Poppins', 'NotoSansBengali', sans-serif;
 }
 
 :-ms-input-placeholder {
     /* IE 10+ */
     color: #969696;
-    font-family: 'NotoSansBengali', 'Poppins', sans-serif;
+    font-family: 'Poppins', 'NotoSansBengali', sans-serif;
 }
 
 :-moz-placeholder {
     /* Firefox 18- */
     color: #969696;
-    font-family: 'NotoSansBengali', 'Poppins', sans-serif;
+    font-family: 'Poppins', 'NotoSansBengali', sans-serif;
 }
 
 .bg-light {
@@ -5831,7 +5829,9 @@ textarea {
 
 .login-modal-switcher-item li form {}
 
-.login-modal-switcher-item li form label {font-size: 15px;}
+.login-modal-switcher-item li form label {
+    font-size: 15px;
+}
 
 .login-modal-switcher-item li form input {
     font-size: 15px;
@@ -5840,3 +5840,261 @@ textarea {
 .login-modal-switcher-item li form button {
     font-size: 15px;
 }
+
+/* student profile page css start from here */
+.notifications-bar {
+    background: #fff;
+    padding: 0;
+    box-shadow: 0px 0 15px #80808042;
+    overflow: hidden;
+}
+
+.notifications-bar button {
+    background: #2C2B5E;
+    padding: 10px;
+    border-radius: 50%;
+    color: #fff !important;
+    top: 10px;
+    right: 10px;
+}
+
+.notifications-bar h2 {
+    background: #0078D7;
+    font-size: 22px;
+    font-weight: normal;
+    font-family: Poppins, NotoSansBengali;
+    margin-bottom: 0;
+    text-align: center;
+    padding: 12px;
+}
+
+.notifications-bar h2 i {
+    margin-right: 10px;
+}
+
+.notifications-bar ul {
+    height: 100%;
+    overflow-y: auto;
+}
+
+.notifications-bar ul li {
+    border-bottom: 1px solid #80808033;
+    border-top: 1px solid #80808033;
+    padding: 7px 0;
+    overflow: hidden;
+    background: #fafafa;
+}
+
+.notification-user-tm {
+    background-image: url(../img/mahin.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    width: 60px;
+    height: 60px;
+    margin-left: 12px;
+    margin-right: 10px;
+    border-radius: 50%;
+    float: left;
+}
+
+.notification-item {
+    float: left;
+    width: 180px;
+}
+
+.notification-item p {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+    -webkit-line-clamp: 2;
+    margin-bottom: 5px;
+    font-family: Poppins, NotoSansBengali;
+    margin-top: 0;
+    line-height: 20px;
+}
+
+.notification-item .notification-time {
+    color: gray;
+    font-size: 13px;
+    margin: 0;
+    line-height: 1;
+}
+
+.notification-type {
+    width: 32px;
+    height: 32px;
+    float: right;
+    border-radius: 50%;
+    position: relative;
+    margin-right: 15px;
+    margin-left: 10px;
+}
+
+.notification-type img {
+    width: 100%;
+}
+
+.user-student-img {
+    background-image: url(../img/mahin.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+    overflow: hidden;
+    border-radius: 25px;
+    float: left;
+    margin: 10px;
+    margin-top: 5px;
+}
+
+.student-cover-photo {
+    background-image: url(../img/design.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    height: 350px;
+    position: relative;
+}
+
+.student-cover-photo button {
+    display: none;
+    position: absolute;
+    bottom: 25px;
+    right: 30px;
+    border: 1px solid #2C2B5E;
+    font-size: 14px;
+    line-height: 130%;
+    background-color: #fff;
+    padding: 10px 25px;
+    text-align: center;
+    border-radius: 25px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    font-weight: 500;
+    color: #2C2B5E;
+    transition: linear .2s;
+}
+
+.student-cover-photo:hover button {
+    display: initial;
+    transition: linear .2s;
+}
+
+.student-cover-photo button i {
+    font-size: 16px;
+    margin-right: 7px;
+}
+
+.student-profile-sec {
+    position: relative;
+    background: #F7F7F7;
+    padding-top: 50px;
+}
+
+.profile-card {
+    position: relative;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 30px;
+    font-size: 14px;
+    line-height: 130%;
+    margin-bottom: 30px;
+}
+
+.profile-card img {
+    margin: 0 auto;
+    margin-bottom: 15px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display: block;
+}
+
+.profile-card h2 {
+    font-size: 20px;
+    font-weight: 500;
+    color: #0e0e0f;
+    text-align: center;
+    display: block;
+    padding-bottom: 10px;
+}
+
+.profile-card p {
+    font-size: 14px;
+    font-weight: 400;
+    height: 19.6px;
+    color: #62646a;
+    text-align: center;
+    margin: 0;
+    line-height: 1;
+}
+
+.profile-card p span {
+    margin-left: 5px;
+    color: #333;
+}
+
+.profile-card a {
+    display: block;
+    border: 1px solid #ddd;
+    font-size: 14px;
+    line-height: 130%;
+    background-color: #fff;
+    color: #777;
+    padding: 10px 0;
+    text-align: center;
+    border-radius: 3px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    font-weight: 500;
+    transition: linear .2s;
+}
+
+.profile-card a:hover {
+    transition: linear .2s;
+    color: #2C2B5E;
+    border-color: gray;
+}
+
+.profile-card table {
+    border-top: 1px solid #ddd;
+    margin-top: 20px;
+    padding-top: 20px;
+    font-size: 14px;
+    width: 100%;
+    display: block;
+}
+
+.profile-card table tbody {
+    display: table;
+    width: 100%;
+}
+
+.profile-card table tbody tr {}
+
+.profile-card table tbody tr td {
+    padding-bottom: 17px;
+    color: #62646a;
+    font-size: 14px;
+    height: 18.2px;
+    font-weight: 600;
+}
+
+.profile-card table tbody tr td:last-child {
+    text-align: right;
+}
+
+.profile-card table tbody tr td i {
+    margin-right: 15px;
+}
+
+.profile-card table tbody tr td span {
+    font-weight: 400;
+
+}
+
+/* student profile page css end here */

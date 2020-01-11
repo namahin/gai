@@ -7,7 +7,9 @@
     .slider-area {
         height: 950px
     }
-
+    .slider-area .uk-slideshow-items{
+        min-height: 950px !important;;
+    }
     .header-top-right::after {
         left: 3%;
     }
