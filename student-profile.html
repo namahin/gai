@@ -249,10 +249,378 @@
                 </div>
                 <div class="col-md-8 col-sm-8 col-xs-12">
                     <div class="stutent-action-bar">
-                        <ul uk-tab>
+                        <ul class="student-tab" uk-tab>
                             <li class="uk-active"><a href="#">Timeline</a></li>
                             <li><a href="#">About</a></li>
                             <li><a href="#">Accademic</a></li>
+                        </ul>
+                        <ul class="uk-switcher student-tab-expend">
+                            <li>
+                                <div class="post-up">
+                                    <form action="#" enctype="multpart/form-data">
+                                        <label for="post-title">Post a blog</label>
+                                        <input id="post-title" type="text" placeholder="Blog subject" required>
+                                        <textarea placeholder="Blog details" name="" id="" rows="8"></textarea>
+                                        <div id="image-preview">
+                                            <label title="Input image" for="image-upload" id="image-label"></label>
+                                            <input type="file" name="image" id="image-upload" />
+                                        </div>
+                                        <div class="text-right">
+                                            <button type="submit">Post</button>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="post-favorite">
+                                    <p>My favorite items</p>
+                                    <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1"
+                                        uk-slider="sets: true">
+                                        <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@m">
+                                            <li>
+                                                <div class="post-favorite-card">
+                                                    <div class="post-favorite-card-img"></div>
+                                                    <a href="#">বঙ্গবন্ধুর দেওয়া বিজয়ের আলোকবর্তিকা নিয়ে চলতে চাই
+                                                        বঙ্গবন্ধুর দেওয়া বিজয়ের আলোকবর্তিকা নিয়ে চলতে চাই </a>
+                                                    <i>6 <span>comments</span></i>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <a class="uk-position-center-left uk-position-small uk-hidden-hover post-favorite-nav-left"
+                                            href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+                                        <a class="uk-position-center-right uk-position-small uk-hidden-hover post-favorite-nav-right"
+                                            href="#" uk-slidenav-next uk-slider-item="next"></a>
+                                    </div>
+                                </div>
+                                <div class="post-view-card">
+                                    <div class="post-view-head">
+                                        <div class="post-view-author">
+                                            <div class="post-view-author-img">
+                                                <a href="#"><img src="img/mahin.jpg" alt="Noore Alam Mahin"></a>
+                                            </div>
+                                            <div class="post-view-author-info">
+                                                <a href="">Noore Alam Mahin</a>
+                                                <p><i class="zmdi zmdi-time"></i>01:02 - 10/01/2020</p>
+                                            </div>
+                                        </div>
+                                        <div class="post-view-menu uk-inline">
+                                            <button type="button"><i class="zmdi zmdi-menu"></i></button>
+                                            <div class="post-view-menu-expend" uk-dropdown="pos: bottom-right;">
+                                                <ul>
+                                                    <li><button><i class="zmdi zmdi-edit"></i><span>Edit blog
+                                                                post</span></button></li>
+                                                    <li><button><i class="zmdi zmdi-delete"></i><span>Delete
+                                                                post</span></button></li>
+                                                    <li><button><i class="zmdi zmdi-eye-off"></i><span>Hide
+                                                                post</span></button></li>
+                                                    <li><button><i class="zmdi zmdi-link"></i><span>Copy post
+                                                                link</span></button></li>
+                                                    <li><button><i class="zmdi zmdi-favorite"></i><span>Add to
+                                                                favorite</span></button></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="post-view-body">
+                                        <div class="post-view-title">
+                                            বঙ্গবন্ধুর দেওয়া বিজয়ের আলোকবর্তিকা নিয়ে চলতে চাই
+                                        </div>
+                                        <div class="post-view-details">
+                                            জাতির পিতা বঙ্গবন্ধু শেখ মুজিবুর রহমান ২৪ বছরের সংগ্রামের পর দেশ স্বাধীন
+                                            করার মাধ্যমে যে বিজয়ের আলোকবর্তিকা দিয়েছেন, তা নিয়ে সরকার সামনে চলতে চায় বলে
+                                            মন্তব্য করেছেন প্রধানমন্ত্রী শেখ হাসিনা।
+
+                                            শুক্রবার বিকেলে রাজধানীর জাতীয় প্যারেড স্কয়ারে এক বর্ণাঢ্য অনুষ্ঠানে ‘লোগো’
+                                            উন্মোচনের মাধ্যমে দেশব্যাপী ‘মুজিব বর্ষ’ উদযাপনের ক্ষণগণনা আনুষ্ঠানিকভাবে
+                                            উদ্বোধনকালে প্রধানমন্ত্রী এ কথা বলেন।
+                                            <span role="button" type="button" class="collapsed" data-toggle="collapse"
+                                                data-target="#all-text" aria-expanded="false"> read more</span>
+                                            <div class="collapse" id="all-text">
+                                                প্রধানমন্ত্রী বলেন, ‘যে বিজয়ের
+                                                আলোকবর্তিকা তিনি (বঙ্গবন্ধু) আমাদের হাতে তুলে দিয়েছেন তা নিয়েই আমরা
+                                                আগামী
+                                                দিনে চলতে চাই।’
+
+                                                শেখ হাসিনা বলেন, সরকার জাতির পিতার স্বপ্নের উন্নত ও সমৃদ্ধ বাংলাদেশ গড়তে
+                                                চায়। এ বাংলাদেশ বিশ্ব দরবারে মাথা উঁচু করে চলবে, সম্মানের সাথে চলবে।
+
+                                                ক্ষমতাসীন আওয়ামী লীগের প্রধান শেখ হাসিনা বলেন, জাতির পিতার নির্মম
+                                                হত্যাকাণ্ডের পর দেশে এক কালো অধ্যায় এসেছিল। সেই কালো অধ্যায় যাতে আর কোনো
+                                                দিন
+                                                দেশের মানুষের ওপর ছায়া ফেলতে না পারে সে বিষয়ে প্রত্যেককে সতর্ক থাকার
+                                                আহ্বান
+                                                জানান তিনি।
+                                            </div>
+                                        </div>
+                                        <div class="post-view-img" uk-lightbox>
+                                            <a href="img/hasina.jpg" data-alt="Image"></a>
+                                        </div>
+                                    </div>
+                                    <div class="post-view-footer">
+                                        <ul>
+                                            <li><button><i class="zmdi zmdi-favorite"></i></button></li>
+                                            <li><button class="collapsed" data-toggle="collapse"
+                                                    data-target="#comment-box" aria-expanded="false"><i
+                                                        class="zmdi zmdi-comments"></i></button></li>
+                                            <li><button><i class="zmdi zmdi-share"></i></button></li>
+                                        </ul>
+                                    </div>
+                                    <div class="collapse" id="comment-box">
+                                        <div class="post-view-comment">
+                                            <div class="post-view-author">
+                                                <div class="post-view-author-img">
+                                                    <a href="#"><img src="img/mahin.jpg" alt="Noore Alam Mahin"></a>
+                                                </div>
+                                                <div class="post-view-author-info">
+                                                    <a href="">Noore Alam Mahin</a>
+                                                    <p><i class="zmdi zmdi-time"></i>01:02 - 10/01/2020</p>
+                                                </div>
+                                            </div>
+                                            <form action="#">
+                                                <textarea id="" rows="3" required></textarea>
+                                                <button type="submit">Comment</button>
+                                            </form>
+                                        </div>
+                                        <div class="post-view-comment">
+                                            <div class="post-view-author">
+                                                <div class="post-view-author-img">
+                                                    <a href="#"><img src="img/mahin.jpg" alt="Noore Alam Mahin"></a>
+                                                </div>
+                                                <div class="post-view-author-info">
+                                                    <a href="">Noore Alam Mahin</a>
+                                                    <p><i class="zmdi zmdi-time"></i>01:02 - 10/01/2020</p>
+                                                </div>
+                                            </div>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut alias
+                                                officia sequi tempore accusantium quae recusandae minus. Animi quos
+                                                fugiat eveniet modi veritatis nostrum, reiciendis debitis! Libero
+                                                praesentium distinctio ad!</p>
+                                        </div>
+                                        <div class="post-view-comment">
+                                            <div class="post-view-author">
+                                                <div class="post-view-author-img">
+                                                    <a href="#"><img src="img/mahin.jpg" alt="Noore Alam Mahin"></a>
+                                                </div>
+                                                <div class="post-view-author-info">
+                                                    <a href="">Noore Alam Mahin</a>
+                                                    <p><i class="zmdi zmdi-time"></i>01:02 - 10/01/2020</p>
+                                                </div>
+                                            </div>
+                                            <p>গ্রাফিক আর্টস ইন্সটিটিউট বাংলাদেশের একমাত্র প্রিন্টিং এবং গ্রাফিক ডিজাইন
+                                                ইন্সটিটউট । এই পলিটেকনিক ইন্সটিটউটটি ১৯৬৭ সালে প্রতিষ্ঠিত হয়। এই
+                                                প্রতিষ্ঠানে বর্তমানে ৩ টি বিভাগ চলমান রয়েছে...</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="student-about">
+                                    <button><i class="zmdi zmdi-edit"></i>Edit Intro</button>
+                                    <h3>About me</h3>
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos quaerat error
+                                        eligendi voluptatibus numquam aperiam tempore enim cum aut? Explicabo at odit
+                                        eos assumenda labore quos corrupti molestias vel consequatur? Lorem, ipsum dolor
+                                        sit amet consectetur adipisicing elit. Praesentium quod numquam magni, facere
+                                        nemo aperiam cum dicta sed quidem impedit, quis maxime labore? Consectetur eos
+                                        vero quidem accusantium nihil hic? Lorem, ipsum dolor sit amet consectetur
+                                        adipisicing elit. Neque molestiae nihil obcaecati nobis est ducimus soluta esse
+                                        laborum! Natus assumenda in labore repellat. Distinctio expedita dolorem illum
+                                        quia? Est, eaque.</p>
+                                    <h3>Workplace</h3>
+                                    <p class="mb-0"><b>Company Name</b></p>
+                                    <p class="m-0">Designation</p>
+                                </div>
+                                <div class="student-full-info">
+                                    <h3>Academic Information</h3>
+                                    <table>
+                                        <tbody>
+                                            <tr>
+                                                <td>Program</td>
+                                                <td>Diploma-in-Engineering</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Technology</td>
+                                                <td>Computer Technology</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Shift</td>
+                                                <td>2nd Shift</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Session</td>
+                                                <td>2017-18</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Board Roll</td>
+                                                <td>925811</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Board Reg. No</td>
+                                                <td></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="student-full-info">
+                                    <h3>Personal Information</h3>
+                                    <table>
+                                        <tbody>
+                                            <tr>
+                                                <td>Full Name (English)</td>
+                                                <td>Full Name (Bangla)</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Father's Name</td>
+                                                <td>Md Delware Khan</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Mother's Name</td>
+                                                <td>Fahima</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Date of Birth</td>
+                                                <td>02-07-2001</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Gender</td>
+                                                <td>Male</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Blood Group</td>
+                                                <td>AB+</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Mobile Number</td>
+                                                <td>+8801798366057</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Email Address</td>
+                                                <td>mahin0w1@gmail.com</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Present Address</td>
+                                                <td>Present here</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Permanent Address</td>
+                                                <td>Permanent here</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Religion</td>
+                                                <td>Islam</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="student-full-info">
+                                    <h3>Local Guardian Information</h3>
+                                    <table>
+                                        <tbody>
+                                            <tr>
+                                                <td>Guardian Name</td>
+                                                <td>Relation as</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Mobile Number</td>
+                                                <td>215478451245</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Guardian NID Number</td>
+                                                <td>54789856325478</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Permanent Address</td>
+                                                <td>Permanent Address here</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="student-accademic">
+                                    <ul uk-accordion="multiple: true">
+                                        <li class="uk-open">
+                                            <a class="uk-accordion-title" href="#">Class Routine</a>
+                                            <div class="uk-accordion-content">
+                                                <div class="student-accademic-content">
+                                                    <iframe src="img/Class Routine.pdf" frameborder="0"></iframe>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <a class="uk-accordion-title" href="#">Syllabus</a>
+                                            <div class="uk-accordion-content">
+                                                <div class="student-accademic-content">
+                                                    <iframe src="img/Class Routine.pdf" frameborder="0"></iframe>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <a class="uk-accordion-title" href="#">Probidhan 2016</a>
+                                            <div class="uk-accordion-content">
+                                                <div class="student-accademic-content">
+                                                    <iframe src="img/Class Routine.pdf" frameborder="0"></iframe>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <a class="uk-accordion-title" href="#">Exam Routine</a>
+                                            <div class="uk-accordion-content">
+                                                <div class="student-accademic-content">
+                                                    <iframe src="img/Class Routine.pdf" frameborder="0"></iframe>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <a class="uk-accordion-title" href="#">Resulte</a>
+                                            <div class="uk-accordion-content">
+                                                <div class="student-result">
+                                                    <p>1st Semester</p>
+                                                    <table>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>CGPA</td>
+                                                                <td>4.00</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Grade</td>
+                                                                <td>A+</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Status</td>
+                                                                <td>Pass</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Remark</td>
+                                                                <td>Have to do better</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                    <p>2nd Semester</p>
+                                                    <table>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>CGPA</td>
+                                                                <td>0.00</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Grade</td>
+                                                                <td>F</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Status</td>
+                                                                <td>Refurd</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Remark</td>
+                                                                <td>Refurd in Subject name with code here</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -280,8 +648,8 @@
                                 <ul>
                                     <li><a href="tel:+88-02-9113896"><i class="zmdi zmdi-phone"></i></a></li>
                                     <li><a href="mailto:info@gai.gov.bd"><i class="zmdi zmdi-email"></i></a></li>
-                                    <li><a href="https://www.facebook.com/groups/1068207879943410/" target="_blank"><i
-                                                class="zmdi zmdi-facebook"></i></a></li>
+                                    <li><a href="https://www.facebook.com/groups/1068207879943410/" target="_blank">
+                                            <i class="zmdi zmdi-facebook"></i></a></li>
                                     <li><a href="#" target="_blank"><i class="zmdi zmdi-linkedin"></i></a>
                                     </li>
                                 </ul>
@@ -342,99 +710,7 @@
         </div>
     </footer>
     <!-- Footer End -->
-    <!-- login Modal -->
-    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalTitle"
-        aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="login-modal">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="loginModalTitle">লগইন করুন</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="login-modal-switcher">
-                    <ul class="uk-subnav uk-subnav-pill" uk-switcher>
-                        <li><a href="#">স্টুডেন্ট লগইন</a></li>
-                        <li><a href="#">টিচার লগইন</a></li>
-                        <li><a href="#">এডমিন লগইন</a></li>
-                    </ul>
-                    <ul class="uk-switcher uk-margin login-modal-switcher-item">
-                        <li>
-                            <form class="uk-form-horizontal uk-margin-large">
-                                <div class="uk-margin-small">
-                                    <label class="uk-form-label" for="s-mail">বোর্ড রোল-</label>
-                                    <div class="uk-form-controls">
-                                        <input class="uk-input" id="s-mail" type="text"
-                                            placeholder="বোর্ড রোল লিখুন...">
-                                    </div>
-                                </div>
-                                <div class="uk-margin-small">
-                                    <label class="uk-form-label" for="s-reg">রেজিস্টেশন নং-</label>
-                                    <div class="uk-form-controls">
-                                        <input class="uk-input" id="s-reg" type="text"
-                                            placeholder="রেজিস্টেশন নং লিখুন...">
-                                    </div>
-                                </div>
-                                <div class="uk-margin-small">
-                                    <label class="uk-form-label" for="s-pass">পাসওয়ার্ড</label>
-                                    <div class="uk-form-controls">
-                                        <input class="uk-input" id="s-pass" type="password"
-                                            placeholder="পাসওয়ার্ড দিন...">
-                                    </div>
-                                </div>
-                                <div class="uk-margin text-right">
-                                    <button class="uk-button uk-button-primary">এগিয়ে যান</button>
-                                </div>
-                            </form>
-                        </li>
-                        <li>
-                            <form class="uk-form-horizontal uk-margin-large">
-                                <div class="uk-margin-small">
-                                    <label class="uk-form-label" for="t-mail">ইমেইল</label>
-                                    <div class="uk-form-controls">
-                                        <input class="uk-input" id="t-mail" type="text"
-                                            placeholder="এখানে ইমেইল এড্রেস লিখুন...">
-                                    </div>
-                                </div>
-                                <div class="uk-margin-small">
-                                    <label class="uk-form-label" for="t-pass">পাসওয়ার্ড</label>
-                                    <div class="uk-form-controls">
-                                        <input class="uk-input" id="t-pass" type="password"
-                                            placeholder="পাসওয়ার্ড দিন...">
-                                    </div>
-                                </div>
-                                <div class="uk-margin text-right">
-                                    <button class="uk-button uk-button-primary">এগিয়ে যান</button>
-                                </div>
-                            </form>
-                        </li>
-                        <li>
-                            <form class="uk-form-horizontal uk-margin-large">
-                                <div class="uk-margin-small">
-                                    <label class="uk-form-label" for="a-mail">ইমেইল</label>
-                                    <div class="uk-form-controls">
-                                        <input class="uk-input" id="a-mail" type="text"
-                                            placeholder="এখানে ইমেইল এড্রেস লিখুন...">
-                                    </div>
-                                </div>
-                                <div class="uk-margin-small">
-                                    <label class="uk-form-label" for="a-pass">পাসওয়ার্ড</label>
-                                    <div class="uk-form-controls">
-                                        <input class="uk-input" id="a-pass" type="password"
-                                            placeholder="পাসওয়ার্ড দিন...">
-                                    </div>
-                                </div>
-                                <div class="uk-margin text-right">
-                                    <button class="uk-button uk-button-primary">এগিয়ে যান</button>
-                                </div>
-                            </form>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
+
     <!-- scroll up -->
     <!-- <a class="scroll-up" href="#top" uk-scroll>
         <i class="zmdi zmdi-chevron-up"></i>
@@ -449,6 +725,19 @@
         new WOW().init();
     </script>
     <script src="js/main.js"></script>
+    <script src="js/jquery.uploadPreview.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $.uploadPreview({
+                input_field: "#image-upload", // Default: .image-upload
+                preview_box: "#image-preview", // Default: .image-preview
+                label_field: "#image-label", // Default: .image-label
+                label_default: "", // Default: Choose File
+                label_selected: "", // Default: Change File
+                no_label: false // Default: false
+            });
+        });
+    </script>
 </body>
 
 </html>

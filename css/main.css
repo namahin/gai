@@ -5993,6 +5993,7 @@ textarea {
     position: relative;
     background: #F7F7F7;
     padding-top: 50px;
+    padding-bottom: 80px;
 }
 
 .profile-card {
@@ -6095,6 +6096,640 @@ textarea {
 .profile-card table tbody tr td span {
     font-weight: 400;
 
+}
+
+.stutent-action-bar {
+    padding-left: 45px;
+}
+
+.student-tab {
+    position: relative;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    font-size: 14px;
+    line-height: 130%;
+    margin-left: 0;
+    margin-bottom: 10px;
+}
+
+.student-tab li {
+    padding-left: 30px;
+}
+
+.student-tab li a {
+    padding: 10px;
+    font-size: 14px;
+    text-transform: capitalize;
+}
+
+.student-tab-expend {}
+
+.student-tab-expend li {}
+
+.post-up {
+    position: relative;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 30px;
+    font-size: 14px;
+    line-height: 130%;
+    margin-bottom: 30px;
+    transition: linear .2s;
+}
+
+.post-up:hover {
+    transition: linear .2s;
+    border: 1px solid #1e87f0;
+}
+
+.post-up form {}
+
+.post-up form label {
+    margin-bottom: 18px;
+    font-size: 16px;
+}
+
+.post-up form input {
+    width: 100%;
+    box-sizing: border-box;
+    position: relative;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 10px;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+
+.post-up form input:hover {
+    border: 1px solid #1e87f0;
+    transition: linear 0s;
+}
+
+.post-up form input:focus {
+    border: 1px solid #1e87f0;
+    transition: linear 0s;
+}
+
+.post-up form textarea {
+    width: 100%;
+    box-sizing: border-box;
+    position: relative;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.post-up form textarea:hover {
+    border: 1px solid #1e87f0;
+}
+
+.post-up form textarea:focus {
+    border: 1px solid #1e87f0;
+    transition: linear 0s;
+}
+
+.post-up form button {
+    border: 1px solid #2C2B5E;
+    font-size: 14px;
+    line-height: 130%;
+    background-color: #fff;
+    padding: 8px 40px;
+    text-align: center;
+    border-radius: 25px;
+    box-sizing: border-box;
+    font-weight: 500;
+    color: #2C2B5E;
+    transition: linear .2s;
+    box-shadow: 0 0 5px #5d5d5e33;
+}
+
+#image-preview {
+    position: relative;
+    overflow: hidden;
+    background-color: #fafafa;
+    color: #ecf0f1;
+    width: 100px;
+    height: 100px;
+    margin: 15px 0;
+    cursor: pointer;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    transition: linear .2s;
+}
+
+#image-preview:hover {
+    transition: linear .2s;
+    border: 1px solid #1e87f0;
+}
+
+#image-preview input {
+    position: absolute;
+    opacity: 0;
+    z-index: 2;
+    width: 100%;
+    display: block;
+    height: 100%;
+    cursor: pointer;
+}
+
+#image-preview label {
+    position: absolute;
+    z-index: 1;
+    opacity: 0.8;
+    cursor: pointer;
+    font-size: 32px;
+    text-transform: capitalize;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    font-family: 'Material-Design-Iconic-Font';
+    margin: 0;
+    color: #1e87f0;
+}
+
+.post-favorite {
+    position: relative;
+    background-color: #fff;
+    font-size: 14px;
+    line-height: 130%;
+    margin-bottom: 30px;
+    transition: linear .2s;
+    border: 1px solid #ddd;
+}
+
+.post-favorite p {
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+    padding: 10px 30px;
+    font-size: 16px;
+    transition: linear .2s;
+    font-weight: 400;
+    color: #606060;
+    margin: 0;
+}
+
+.post-favorite li {
+    padding-left: 0;
+}
+
+.post-favorite-card {
+    position: relative;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    transition: linear .2s;
+}
+
+.post-favorite-card-img {
+    background-image: url(../img/cmt.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    height: 180px;
+}
+
+.post-favorite-card a {
+    color: #333;
+    font-size: 16px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+    -webkit-line-clamp: 2;
+    box-sizing: border-box;
+    margin: 15px 10px;
+}
+
+.post-favorite-card:hover a {
+    color: #1e87f0;
+}
+
+.post-favorite-card i {
+    color: gray;
+    font-size: 13px;
+    padding: 5px 10px;
+    display: block;
+    border-top: 1px solid #ddd;
+}
+
+.post-favorite-card i span {}
+
+
+
+.post-favorite-nav-left {
+    background: #fffffffc;
+    color: #333 !important;
+    margin-left: 0;
+    padding: 20px 10px;
+    border: 1px solid #ddd;
+    border-left: none;
+    border-radius: 0 5px 5px 0;
+    transition: linear .2s;
+}
+
+.post-favorite-nav-right {
+    background: #fffffffc;
+    color: #333 !important;
+    margin-right: 0;
+    padding: 20px 10px;
+    border: 1px solid #ddd;
+    border-right: none;
+    border-radius: 5px 0 0 5px;
+    transition: linear .2s;
+}
+
+.post-view-card {
+    position: relative;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    transition: linear .2s;
+    margin-bottom: 10px;
+    padding-top: 15px;
+}
+
+.post-view-card:hover {
+    transition: linear .2s;
+    border: 1px solid #1e87f0;
+}
+
+.post-view-head {
+    position: relative;
+    padding: 15px;
+    padding-top: 0;
+}
+
+.post-view-author {
+    overflow: hidden;
+}
+
+.post-view-author-img {
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+    border-radius: 34px;
+    border: 1px solid #797979ba;
+    float: left;
+    margin-right: 8px;
+}
+
+.post-view-author-img a {
+    display: block;
+}
+
+.post-view-author-img a img {
+    width: 100%;
+}
+
+.post-view-author-info {
+    float: left;
+    padding-top: 2px;
+}
+
+.post-view-author-info a {
+    color: #2c2b5e;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1;
+}
+
+.post-view-author-info p {
+    margin: 0;
+    font-size: 11px;
+    color: gray;
+    line-height: 1.4;
+}
+
+.post-view-author-info p i {
+    margin-right: 5px;
+    font-size: unset;
+    color: #2c2b5e;
+}
+
+.post-view-menu {
+    position: absolute;
+    top: 0;
+    right: 15px;
+}
+
+.post-view-menu button {
+    background: transparent;
+    line-height: 1;
+    padding: 5px;
+    font-size: 20px;
+}
+
+.post-view-menu-expend {
+    padding: 0;
+    margin: 0;
+}
+
+.post-view-menu ul {
+    padding: 10px 0;
+    padding-left: 5px;
+}
+
+.post-view-menu ul li {
+    padding: 5px 0;
+}
+
+.post-view-menu ul li button {
+    font-size: 15px;
+    display: block;
+    padding: 10px;
+    padding-right: 0;
+    width: 100%;
+    text-align: left;
+}
+
+.post-view-menu ul li button:hover {
+    color: #1E1E1E !important;
+    background: #fafafa;
+}
+
+.post-view-menu ul li button i {
+    width: 20px;
+    font-size: 14px;
+    margin-right: 10px;
+}
+
+.post-view-menu ul li button span {
+    font-size: 14px;
+    opacity: .8;
+}
+
+.post-view-body {}
+
+.post-view-title {
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+    padding: 15px;
+    padding-top: 5px;
+}
+
+.post-view-details {
+    padding: 15px;
+    padding-top: 0;
+    font-size: 15px;
+}
+
+.post-view-details span {
+    color: #58A4E0;
+}
+
+.post-view-img {
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+.post-view-img a {
+    background-image: url(../img/hasina.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    width: 100%;
+    height: 400px;
+    display: block;
+}
+
+.post-view-footer {
+    padding: 10px;
+    box-sizing: border-box;
+    width: 100%;
+    padding-bottom: 8px;
+}
+
+.post-view-footer ul {
+    width: 100%;
+    display: block;
+}
+
+.post-view-footer ul li {
+    display: inline-block;
+    width: 32%;
+    text-align: center;
+}
+
+.post-view-footer ul li button {
+    background: none;
+    font-size: 22px;
+    line-height: 1;
+    padding: 5px;
+}
+
+.post-view-footer ul li i {
+    transition: linear .2s;
+}
+
+.post-view-footer ul li .zmdi-favorite:hover {
+    color: #f52977;
+}
+
+.post-view-footer ul li .zmdi-comments:hover {
+    color: #8a12fa;
+}
+
+.post-view-footer ul li .zmdi-share:hover {
+    color: #00aeff;
+}
+
+.post-view-comment {
+    position: relative;
+    background-color: #fff;
+    border-top: 1px solid #ddd;
+    padding: 30px;
+}
+
+.post-view-comment textarea {
+    margin-top: 15px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 15px;
+    font-size: 15px;
+    width: 100%;
+    display: block;
+    margin-bottom: 15px;
+    border-radius: 6px;
+}
+
+.post-view-comment button {
+    border: 1px solid #2C2B5E;
+    font-size: 14px;
+    line-height: 130%;
+    background-color:
+        #fff;
+    padding: 8px 40px;
+    text-align: center;
+    border-radius: 25px;
+    box-sizing: border-box;
+    font-weight: 500;
+    color:
+        #2C2B5E;
+    transition: linear .2s;
+    box-shadow: 0 0 5px #5d5d5e33;
+}
+
+.post-view-comment p {
+    margin-bottom: 0;
+}
+
+.student-about {
+    position: relative;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 30px;
+    font-size: 14px;
+    line-height: 130%;
+    margin-bottom: 30px;
+}
+
+.student-about button {
+    position: absolute;
+    top: 25px;
+    right: 30px;
+    border: 1px solid #2C2B5E;
+    font-size: 14px;
+    line-height: 130%;
+    background-color: #fff;
+    padding: 10px 25px;
+    text-align: center;
+    border-radius: 25px;
+    box-sizing: border-box;
+    font-weight: 500;
+    color: #2C2B5E;
+    transition: linear .2s;
+    box-shadow: 0 0 5px #5d5d5e33;
+}
+
+.student-about button i {
+    font-size: 16px;
+    margin-right: 7px;
+}
+
+.student-about h3 {
+    font-size: 20px;
+    font-weight: 500;
+    color: #0e0e0f;
+    display: block;
+}
+
+.student-about p {}
+
+.student-about p b {}
+
+.student-full-info {
+    position: relative;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 30px;
+    font-size: 14px;
+    line-height: 130%;
+    margin-bottom: 30px;
+}
+
+.student-full-info h3 {
+    font-size: 20px;
+    font-weight: 500;
+    color: #0e0e0f;
+    display: block;
+    padding-bottom: 15px;
+}
+
+.student-full-info table {
+    width: 100%;
+}
+
+.student-full-info table tbody {}
+
+.student-full-info table tbody tr {
+    border-bottom: 1px solid #dddddd59;
+}
+
+.student-full-info table tbody tr td {
+    padding: 5px 0;
+    color: #333;
+}
+
+.student-full-info table tbody tr td:first-child {
+    width: 230px;
+    color: #666;
+}
+
+.student-accademic {}
+
+.student-accademic ul {}
+
+.student-accademic ul li {
+    position: relative;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    line-height: 130%;
+    margin-bottom: 10px;
+}
+
+.student-accademic .uk-accordion-content {
+    margin-top: 0;
+}
+
+.student-accademic ul li a {
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+    display: block;
+    position: relative;
+    padding: 15px 30px;
+}
+
+.student-accademic-content {}
+
+.student-accademic-content iframe {
+    width: 100%;
+    display: block;
+    height: 80vh;
+}
+
+.student-result {
+    position: relative;
+    background-color:
+        #fff;
+    padding: 30px;
+    font-size: 14px;
+    line-height: 130%;
+    padding-top: 0;
+}
+
+.student-result p {
+    font-size: 16px;
+    font-weight: 500;
+    color: #333;
+    display: block;
+    position: relative;
+    padding-bottom: 3px;
+    border-bottom: 1px solid #333333a3;
+    padding-top: 18px;
+}
+
+.student-result table {
+    width: 100%;
+}
+
+.student-result table tbody {}
+
+.student-result table tbody tr {
+    border-bottom: 1px solid #dddddd59;
+    color: #333;
+}
+
+.student-result table tbody tr td {
+    padding: 5px 0;
+}
+
+.student-result table tbody tr td:first-child {
+    width: 180px;
+    color: #666;
 }
 
 /* student profile page css end here */
