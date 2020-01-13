@@ -241,9 +241,8 @@ h6 {
 }
 
 .scroll-up {
-
     position: fixed;
-    z-index: 1140;
+    z-index: 1;
     background: #1CC0EC;
     padding: 10px;
     width: 40px;
@@ -3961,7 +3960,6 @@ textarea {
 /*  10. Subscribe CSS
 /*----------------------------------------*/
 .subscribe-area {
-    background: #fafafa;
     padding: 100px 0;
 }
 
@@ -4103,6 +4101,7 @@ textarea {
 /*----------------------------------------*/
 .main-footer {
     padding: 100px 0;
+    background: #fafafa;
 }
 
 .footer-area.three .main-footer {
@@ -5393,12 +5392,6 @@ textarea {
     padding: 30px 0;
 }
 
-.student-db-sec table {}
-
-.student-db-sec table thead {}
-
-.student-db-sec table thead tr {}
-
 .student-db-sec table thead tr th {
     color: #333;
     font-size: 16px;
@@ -5407,10 +5400,6 @@ textarea {
     line-height: 1;
     vertical-align: middle;
 }
-
-.student-db-sec table tbody {}
-
-.student-db-sec table tbody tr {}
 
 .student-db-sec table tbody tr td {
     text-align: center;
@@ -5474,8 +5463,6 @@ textarea {
     padding-top: 100px;
 }
 
-.contant-intro {}
-
 .contant-intro iframe {
     width: 100%;
     height: 420px;
@@ -5493,22 +5480,31 @@ textarea {
 .digital-contant-card {
     position: relative;
     background: white;
-    box-shadow: 0 0 15px #80808052;
-    border-radius: 6px;
+    overflow: hidden;
+    border: 1px solid #ddd;
+}
+
+.digital-contant-card-img {
+    background-image: url(../img/design.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    height: 200px;
     overflow: hidden;
 }
 
-.digital-contant-card a {}
-
-.digital-contant-card a img {}
-
 .digital-contant-card a p {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+    -webkit-line-clamp: 2;
     margin: 0;
     font-size: 16px;
     color: #2C2B5E;
-    padding: 15px;
-    padding-bottom: 0;
-    font-weight: 600;
+    font-weight: 500;
+    margin: 10px 15px;
 }
 
 .digital-contant-card button {
@@ -5517,7 +5513,7 @@ textarea {
     top: 10px;
     right: 10px;
     font-size: 32px;
-    color: #1CC0EC;
+    color: #FFF;
     transition: linear .5s;
 }
 
@@ -5532,11 +5528,12 @@ textarea {
 .digital-contant-card ul {
     padding: 15px;
     padding-top: 10px;
-    padding-bottom: 20px;
+    padding-bottom: 15px;
+    border-top: 1px solid #ddd;
 }
 
 .digital-contant-card ul li {
-    display: inline-block;
+    display: ;
     margin-right: 10px;
 }
 
@@ -5545,7 +5542,7 @@ textarea {
 }
 
 .digital-contant-card ul li i {
-    margin-right: 5px;
+    margin-right: 8px;
 }
 
 /* Digital contant end */
@@ -5960,30 +5957,6 @@ textarea {
     position: relative;
 }
 
-.student-cover-photo button {
-    display: none;
-    position: absolute;
-    bottom: 25px;
-    right: 30px;
-    border: 1px solid #2C2B5E;
-    font-size: 14px;
-    line-height: 130%;
-    background-color: #fff;
-    padding: 10px 25px;
-    text-align: center;
-    border-radius: 25px;
-    box-sizing: border-box;
-    margin-top: 20px;
-    font-weight: 500;
-    color: #2C2B5E;
-    transition: linear .2s;
-}
-
-.student-cover-photo:hover button {
-    display: initial;
-    transition: linear .2s;
-}
-
 .student-cover-photo button i {
     font-size: 16px;
     margin-right: 7px;
@@ -6179,6 +6152,7 @@ textarea {
     padding: 10px;
     border-radius: 3px;
     overflow: hidden;
+    margin-bottom: 15px;
 }
 
 .post-up form textarea:hover {
@@ -6188,6 +6162,34 @@ textarea {
 .post-up form textarea:focus {
     border: 1px solid #1e87f0;
     transition: linear 0s;
+}
+
+.post-up form select {
+    width: 100%;
+    box-sizing: border-box;
+    position: relative;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 7px;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+
+.post-up form select option {
+
+    width: 100%;
+    box-sizing: border-box;
+    position: relative;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 8px;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+
+.post-up form .ppt-file {
+    width: 100%;
+    display: block;
 }
 
 .post-up form button {
@@ -6203,6 +6205,13 @@ textarea {
     color: #2C2B5E;
     transition: linear .2s;
     box-shadow: 0 0 5px #5d5d5e33;
+    transition: linear .2s;
+}
+
+.post-up form button:hover {
+    transition: linear .2s;
+    color: #fff;
+    background: #2C2B5E;
 }
 
 #image-preview {
@@ -6500,6 +6509,7 @@ textarea {
     box-sizing: border-box;
     width: 100%;
     padding-bottom: 8px;
+    border-top: 1px solid #ddd;
 }
 
 .post-view-footer ul {
@@ -6513,7 +6523,7 @@ textarea {
     text-align: center;
 }
 
-.post-view-footer ul li button {
+.post-view-footer ul li button, .post-view-footer ul li a {
     background: none;
     font-size: 22px;
     line-height: 1;
@@ -6547,7 +6557,7 @@ textarea {
     margin-top: 15px;
     background-color: #fff;
     border: 1px solid #ddd;
-    padding: 15px;
+    padding: 10px;
     font-size: 15px;
     width: 100%;
     display: block;
@@ -6586,24 +6596,6 @@ textarea {
     margin-bottom: 30px;
 }
 
-.student-about button {
-    position: absolute;
-    top: 25px;
-    right: 30px;
-    border: 1px solid #2C2B5E;
-    font-size: 14px;
-    line-height: 130%;
-    background-color: #fff;
-    padding: 10px 25px;
-    text-align: center;
-    border-radius: 25px;
-    box-sizing: border-box;
-    font-weight: 500;
-    color: #2C2B5E;
-    transition: linear .2s;
-    box-shadow: 0 0 5px #5d5d5e33;
-}
-
 .student-about button i {
     font-size: 16px;
     margin-right: 7px;
@@ -6615,10 +6607,6 @@ textarea {
     color: #0e0e0f;
     display: block;
 }
-
-.student-about p {}
-
-.student-about p b {}
 
 .student-full-info {
     position: relative;
@@ -6716,8 +6704,6 @@ textarea {
     width: 100%;
 }
 
-.student-result table tbody {}
-
 .student-result table tbody tr {
     border-bottom: 1px solid #dddddd59;
     color: #333;
@@ -6732,4 +6718,172 @@ textarea {
     color: #666;
 }
 
+.modal-edit-profile {
+    width: 100%;
+}
+
+.modal-edit-profile form {
+    padding: 30px;
+    background: #fff;
+    padding-bottom: 80px;
+}
+
+.edit-student-info {
+    max-width: 600px;
+    margin: auto;
+    box-sizing: border-box;
+    position: relative;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 30px;
+    border-radius: 3px;
+}
+
+.edit-student-info label {
+    display: block;
+    color: #333;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.edit-student-info input {
+    width: 100%;
+    font-size: 16px;
+    margin-bottom: 25px;
+    border: 1px solid #808080ab;
+    padding: 10px 15px;
+    border-radius: 3px;
+}
+
+.edit-student-info textarea {
+    width: 100%;
+    font-size: 16px;
+    margin-bottom: 25px;
+    border: 1px solid #808080ab;
+    padding: 10px 15px;
+    border-radius: 3px;
+}
+
+.edit-student-info button {
+    border: 1px solid #fff;
+    background-color: #2C2B5E;
+    padding: 8px 40px;
+    text-align: center;
+    border-radius: 25px;
+    box-sizing: border-box;
+    font-weight: 500;
+    color: #fff;
+    transition: linear .2s;
+    box-shadow: 0 0 5px #5d5d5e33;
+    margin-right: 15px;
+    transition: linear .2s;
+}
+
+.edit-student-info button:hover {
+    background: #fff;
+    color: #2C2B5E;
+    border-color: #2C2B5E;
+}
+
+.edit-student-info button:last-child {
+    background-color: #0078D7;
+    border-color: #0078D7;
+}
+
+.edit-student-info button:last-child:hover {
+    background: #fff;
+    color: #0078D7;
+    border-color: #0078D7;
+}
+
+.edit-cover-photo {
+    height: 420px;
+    overflow: hidden;
+    text-align: center;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.edit-cover-photo img {
+    width: 100%;
+}
+
 /* student profile page css end here */
+
+/* teacher profile page css end here */
+.teacher-dashbord {
+    border-top: 1px solid #ddd;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.teacher-dashbord ul {
+    margin: 0;
+}
+
+.teacher-dashbord ul li {
+    border: none;
+}
+
+.teacher-dashbord a {
+    padding: 0;
+    border: none;
+}
+
+.teacher-all-content {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 30px;
+}
+
+.teacher-all-content h3 {
+    font-size: 20px;
+    font-weight: 500;
+    color: #0e0e0f;
+    display: block;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.teacher-all-content table {}
+
+.teacher-all-content thead {}
+
+.teacher-all-content th {
+    text-align: center;
+}
+
+.teacher-all-content td {}
+
+.teacher-all-content td:last-child {
+    text-align: center;
+    padding: 7.5px;
+    width: 125px;
+}
+
+.teacher-all-content td a {
+    transition: linear .2s;
+    font-size: 18px;
+    margin: 0 3px;
+    padding: 0 5px;
+    background: #2C2B5E;
+    color: #fff;
+    height: 27px;
+    display: inline-block;
+    width: 27px;
+    position: relative;
+    border-radius: 15px;
+}
+
+.teacher-all-content td a:hover {
+    transition: linear .2s;
+    background: #1CBBE8;
+}
+
+.tec-content-img {
+    width: 100% !important;
+    margin-top: 0 !important;
+    height: 150px !important;
+}
+
+/* teacher profile page css end here */

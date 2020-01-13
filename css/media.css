@@ -7,9 +7,12 @@
     .slider-area {
         height: 950px
     }
-    .slider-area .uk-slideshow-items{
-        min-height: 950px !important;;
+
+    .slider-area .uk-slideshow-items {
+        min-height: 950px !important;
+        ;
     }
+
     .header-top-right::after {
         left: 3%;
     }
@@ -624,8 +627,6 @@
         padding-top: 0;
     }
 
-    .slide-content h2 {}
-
     .notice-area,
     .courses-area,
     .event-area,
@@ -1092,6 +1093,24 @@
         display: none;
     }
 
+    .header-top-right ul li a i {
+        display: none;
+    }
+
+}
+
+@media (max-width: 959px) {
+    .notification-user-tm {
+        width: 32px;
+        height: 32px;
+    }
+
+    .notification-type {
+        width: 18px;
+        margin-right: 10px;
+        margin-left: 5px;
+    }
+
 }
 
 /* Large Mobile :480px. */
@@ -1273,6 +1292,10 @@
     .not-found-sec .newsletter-form {
         margin-right: 0;
         bottom: 0;
+    }
+
+    .slide-content h2 {
+        font-size: 18px;
     }
 }
 

@@ -204,9 +204,7 @@
     </header>
     <!-- Header Area End -->
     <!-- student-cover-photo -->
-    <div class="student-cover-photo">
-        <button><i class="zmdi zmdi-edit"></i>Edit Cover Photo</button>
-    </div>
+    <div class="student-cover-photo"></div>
     <!-- student-profile -->
     <section class="student-profile-sec">
         <div class="container">
@@ -216,7 +214,8 @@
                         <img src="img/mahin.jpg" alt="">
                         <h2>Noore Alam Mahin</h2>
                         <p>ID:<span>C217925811</span></p>
-                        <a href="#" type="button" role="button">Edit Your Profile</a>
+                        <a href="#modal-edit-profile" uk-toggle>Edit Your
+                            Profile</a>
                         <table>
                             <tbody>
                                 <tr>
@@ -413,7 +412,6 @@
                             </li>
                             <li>
                                 <div class="student-about">
-                                    <button><i class="zmdi zmdi-edit"></i>Edit Intro</button>
                                     <h3>About me</h3>
                                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos quaerat error
                                         eligendi voluptatibus numquam aperiam tempore enim cum aut? Explicabo at odit
@@ -710,11 +708,48 @@
         </div>
     </footer>
     <!-- Footer End -->
-
+    <!--  -->
+    <!--  -->
+    <!--  -->
+    <!-- modal edit your profile -->
+    <!-- Button trigger modal -->
+    <!-- Modal -->
+    <div id="modal-edit-profile" class="uk-modal-full" uk-modal>
+        <div class="uk-modal-dialog">
+            <button class="uk-modal-close-full uk-close-large" type="button" uk-close></button>
+            <div class="uk-grid-collapse uk-flex-middle" uk-grid>
+                <div class="modal-edit-profile">
+                    <form action="#">
+                        <div class="edit-cover-photo">
+                            <img id="cover-img" src="img/design.jpg" alt="">
+                        </div>
+                        <div class="edit-student-info">
+                            <label for="cover-input">Change cover photo</label>
+                            <input id="cover-input" type="file" onchange="previewImage(event)">
+                            <label for="Semester">Present Semester</label>
+                            <input id="Semester" type="text">
+                            <label for="about">Write about yourself</label>
+                            <textarea name="" id="about" rows="6"></textarea>
+                            <label for="workplace">Your workplace</label>
+                            <input id="workplace" type="text" placeholder="Company name">
+                            <input type="text" placeholder="Designation">
+                            <label for="present-address">Your present address</label>
+                            <textarea name="" id="present-address" rows="3"></textarea>
+                            <button type="submit">Submit</button>
+                            <button type="reset">Reset</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- modal edit your profile -->
+    <!--  -->
+    <!--  -->
     <!-- scroll up -->
-    <!-- <a class="scroll-up" href="#top" uk-scroll>
+    <a class="scroll-up" href="#top" uk-scroll>
         <i class="zmdi zmdi-chevron-up"></i>
-    </a> -->
+    </a>
     <!-- scroll up -->
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
