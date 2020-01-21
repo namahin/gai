@@ -3993,7 +3993,7 @@ textarea {
     position: absolute;
     right: 1px;
     top: 0px;
-    height: 49px;
+    bottom: 0;
 }
 
 .newsletter-form form button:hover {
@@ -4145,9 +4145,8 @@ textarea {
 
 .single-widget p {
     color: #7d7d7d;
-    font-family: NotoSansBengali;
+    font-family: 'Poppins', 'NotoSansBengali', sans-serif;
     font-size: 14px;
-    font-weight: lighter;
     line-height: 23px;
     margin-bottom: 15px;
 }
@@ -5391,7 +5390,12 @@ textarea {
 .student-db-sec {
     padding: 30px 0;
 }
-
+.student-db-sec table thead tr{
+    border-top: 1px solid #e5e5e5;
+}
+.student-db-sec table tbody{
+    border-bottom: 1px solid #e5e5e5;
+}
 .student-db-sec table thead tr th {
     color: #333;
     font-size: 16px;
@@ -5407,7 +5411,10 @@ textarea {
     font-size: 16px;
     color: #333;
 }
-
+.student-db-sec table tbody tr td button{
+    background: transparent;
+    color: #0078D7;
+}
 .student-db-sec table tbody tr td img {
     width: 70px;
     border-radius: 50%;
@@ -5533,7 +5540,6 @@ textarea {
 }
 
 .digital-contant-card ul li {
-    display: ;
     margin-right: 10px;
 }
 
@@ -6523,7 +6529,8 @@ textarea {
     text-align: center;
 }
 
-.post-view-footer ul li button, .post-view-footer ul li a {
+.post-view-footer ul li button,
+.post-view-footer ul li a {
     background: none;
     font-size: 22px;
     line-height: 1;
@@ -6887,3 +6894,54 @@ textarea {
 }
 
 /* teacher profile page css end here */
+
+/* gellery folder section (gellery.html [page]) */
+.gellery-folder {
+    margin-bottom: 30px;
+    border: 1px solid #80808029;
+    border-radius: 3px;
+    overflow: hidden;
+    transform: scale(1);
+    position: relative;
+    transition: linear .5s
+}
+
+.gellery-folder:hover {
+    transform: scale(1.1);
+    transition: linear .5s
+}
+
+.gellery-folder-tn {
+    height: 150px;
+    overflow: hidden;
+    position: relative;
+    background: #fafafa;
+}
+
+.gellery-folder-tn img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1.4);
+    transition: linear .5s;
+}
+
+.gellery-folder:hover .gellery-folder-tn img {
+    transform: translate(-50%, -50%) scale(1.5);
+    transition: linear .5s;
+}
+
+.gellery-folder p {
+    display: block;
+    margin: 15px 10px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+    -webkit-line-clamp: 2;
+}
+
+.gellery-folder:hover p {
+    color: #0078D7;
+}

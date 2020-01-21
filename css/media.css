@@ -5,11 +5,11 @@
     }
 
     .slider-area {
-        height: 950px
+        height: 650px;
     }
 
     .slider-area .uk-slideshow-items {
-        min-height: 950px !important;
+        min-height: 650px !important;
         ;
     }
 
@@ -1097,6 +1097,23 @@
         display: none;
     }
 
+    .gellery-folder {}
+
+    .gellery-folder-tn {
+        width: 250px;
+        float: left;
+    }
+
+    .gellery-folder-tn img {}
+
+    .gellery-folder p {
+        overflow: initial;
+        text-overflow: initial;
+        -webkit-line-clamp: none;
+        padding: 10px 15px;
+        margin: 0;
+    }
+
 }
 
 @media (max-width: 959px) {
@@ -1282,6 +1299,12 @@
     }
 }
 
+@media (max-width: 400px) {
+    .col-xxs-12 {
+        width: 100%;
+    }
+}
+
 @media (max-width: 575.98px) {
     .not-found-sec h3 {
         top: 0;
@@ -1296,6 +1319,37 @@
 
     .slide-content h2 {
         font-size: 18px;
+    }
+
+    .gellery-folder p {
+
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: normal;
+        -webkit-line-clamp: 3;
+        margin: 10px 15px;
+        padding: 0;
+    }
+
+    .gellery-folder-tn {
+        width: 100%;
+        float: none;
+    }
+
+    .gai-nav {
+        display: none;
+    }
+    .single-teacher-content{
+        bottom: 0;
+        padding: 15px 0;
+    }
+    .single-teacher-content ul {
+        display: none;
+    }
+    .single-teacher-content h4{
+        margin-bottom: 0;
     }
 }
 
