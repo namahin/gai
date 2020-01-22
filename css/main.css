@@ -506,7 +506,7 @@ textarea {
 .banner-content h2 {
     font-size: 40px;
     color: #fff;
-    font-family: NotoSansBengali;
+    font-family: 'Poppins', 'NotoSansBengali', sans-serif;
     font-weight: normal;
     z-index: 1;
     position: relative;
@@ -3829,6 +3829,40 @@ textarea {
     border: 1px solid #2C2B5E;
 }
 
+.blog-details iframe {
+    width: 100%;
+    height: 90vh;
+}
+
+.blog-details table {}
+
+.blog-details table th {
+    text-align: center;
+    border: 1px solid #fff;
+    color: #333;
+    font-size: 16px;
+    padding: 5px;
+    background: #2C2B5E;
+    color: #fff;
+}
+
+.blog-details table td {
+    text-align: center;
+    border: 1px solid #e5e5e5;
+    color: #333;
+    font-size: 16px;
+    padding: 5px 10px;
+}
+
+.blog-details table td a {
+    display: block;
+}
+
+.blog-details-area iframe {
+    width: 100%;
+    height: 100vh;
+}
+
 .blog-details-content {
     padding-top: 15px;
 }
@@ -5390,12 +5424,15 @@ textarea {
 .student-db-sec {
     padding: 30px 0;
 }
-.student-db-sec table thead tr{
+
+.student-db-sec table thead tr {
     border-top: 1px solid #e5e5e5;
 }
-.student-db-sec table tbody{
+
+.student-db-sec table tbody {
     border-bottom: 1px solid #e5e5e5;
 }
+
 .student-db-sec table thead tr th {
     color: #333;
     font-size: 16px;
@@ -5411,10 +5448,12 @@ textarea {
     font-size: 16px;
     color: #333;
 }
-.student-db-sec table tbody tr td button{
+
+.student-db-sec table tbody tr td button {
     background: transparent;
     color: #0078D7;
 }
+
 .student-db-sec table tbody tr td img {
     width: 70px;
     border-radius: 50%;
