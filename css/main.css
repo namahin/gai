@@ -2606,6 +2606,12 @@ textarea {
     font-size: 16px;
     color: #303030;
     margin: 0px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+    -webkit-line-clamp: 2;
 }
 
 .single-notice-right h3 {
@@ -2781,6 +2787,12 @@ textarea {
     color: #606060;
     font-family: NotoSansBengali;
     margin-bottom: 20px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+    -webkit-line-clamp: 3;
 }
 
 .course-content .default-btn {
@@ -3261,6 +3273,12 @@ textarea {
     -webkit-transition: all 0.5s ease 0s;
     -o-transition: all 0.5s ease 0s;
     transition: all 0.5s ease 0s;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+    -webkit-line-clamp: 2;
 }
 
 .event-area.three .event-content h4:hover a {
@@ -4525,13 +4543,26 @@ textarea {
     text-transform: uppercase;
     margin-bottom: 5px;
 }
-
+.single-teacher-content h2 a{
+        display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+    -webkit-line-clamp: 1;
+}
 .single-teacher-content h4 {
     color: #929292;
     font-size: 14px;
     font-family: NotoSansBengali;
     margin-bottom: 20px;
     font-weight: normal;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+    -webkit-line-clamp: 1;
 }
 
 .single-teacher-content ul li {
