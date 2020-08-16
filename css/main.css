@@ -4543,14 +4543,16 @@ textarea {
     text-transform: uppercase;
     margin-bottom: 5px;
 }
-.single-teacher-content h2 a{
-        display: -webkit-box;
+
+.single-teacher-content h2 a {
+    display: -webkit-box;
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: normal;
     -webkit-line-clamp: 1;
 }
+
 .single-teacher-content h4 {
     color: #929292;
     font-size: 14px;
@@ -7014,4 +7016,103 @@ textarea {
 
 .gellery-folder:hover p {
     color: #0078D7;
+}
+
+/* ************************************************ */
+/* login page css */
+/* ************************************************ */
+.login-page {
+    height: 100vh;
+    width: 100%;
+    overflow-y: auto;
+}
+
+.login-page-wrap {
+    display: flex;
+    height: 100%;
+}
+
+.login-form {
+    background: #fff;
+    padding: 30px;
+    width: 550px;
+    overflow-y: auto;
+}
+
+.login-logo {
+    text-align: center;
+    margin-bottom: 120px;
+}
+
+.login-logo img {
+    width: 250px;
+}
+
+.login-form h2 {
+    font-weight: 400;
+    text-align: center;
+    font-size: 26px;
+    color: #1CC0EC;
+    margin-bottom: 30px;
+}
+
+.login-form form {
+    margin-bottom: 40px;
+}
+
+.login-form form p {}
+
+.login-form p label {
+    color: #2C2B5E;
+    margin-bottom: 8px;
+    line-height: 1;
+    margin-left: 5px;
+    position: relative;
+    top: -2px;
+    font-size: 16px;
+}
+
+.login-form p input {
+    width: 100%;
+    background: #fff !important;
+    color: gray;
+    padding: 5px 12px;
+    border: 1px solid #80808080;
+    border-radius: 6px;
+    box-shadow: 0 3px 10px #80808012;
+    font-size: 14px;
+}
+
+.login-form form button {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    border-radius: 6px;
+    color: #fff;
+    background-color: #1CC0EC;
+    box-shadow: 0 3px 10px #80808033;
+    transition: linear .2s;
+    font-size: 15px;
+}
+
+.login-form form button:hover {
+    background-color: #2C2B5E;
+    box-shadow: 0 3px 0px #80808033;
+}
+
+.login-form a {font-size: 16px;}
+
+.login-form p {font-size: 16px;}
+
+.login-form p a {
+    color: #1CC0EC;
+}
+
+.page-bg {
+    background-image: url(../img/banner/rover.JPG);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-color: #F6F8F8;
+    width: 100%;
 }
