@@ -5104,13 +5104,12 @@ textarea {
     color: #1CC0EC;
 }
 
-.history-content p {
+.history-content p, .history-content article {
     font-size: 15px;
     color: #606060;
     margin-bottom: 10px;
     text-align: justify;
 }
-
 
 .history-img img {
     width: 100%;
