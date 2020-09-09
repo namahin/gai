@@ -252,7 +252,7 @@ h6 {
     text-align: center;
     border-radius: 16px;
     transition: ease-in-out .5s;
-    box-shadow: 0 0px 5px #c8c8c869;
+    box-shadow: 0 3px 6px #00000029;
 }
 
 .scroll-up:hover {
@@ -452,8 +452,8 @@ ul {
     color: white !important;
     transition: linear .2s;
     font-size: 16px !important;
-    padding: 5px 25px;
-    padding-top: 7px;
+    padding: 7px 25px;
+    padding-top: 10px;
     background: #1CC0EC;
     display: inline-block;
 }
@@ -461,6 +461,13 @@ ul {
 .gai-link-btn:hover {
     background: #2C2B5E;
     transition: linear .2s;
+}
+
+.gai-link-btn i {
+    font-size: 20px;
+    padding-left: 4px;
+    position: relative;
+    top: 3px;
 }
 
 .banner-btn span {
@@ -4013,6 +4020,7 @@ textarea {
 /*----------------------------------------*/
 .subscribe-area {
     padding: 100px 0;
+    background-color: #f2f7fb;
 }
 
 .subscribe-content h2 {
@@ -7100,9 +7108,13 @@ textarea {
     box-shadow: 0 3px 0px #80808033;
 }
 
-.login-form a {font-size: 16px;}
+.login-form a {
+    font-size: 16px;
+}
 
-.login-form p {font-size: 16px;}
+.login-form p {
+    font-size: 16px;
+}
 
 .login-form p a {
     color: #1CC0EC;
@@ -7115,4 +7127,8 @@ textarea {
     background-position: center center;
     background-color: #F6F8F8;
     width: 100%;
+}
+.pdf-viewer{
+    height: 780px;
+    border: 1px solid #0000003b;
 }

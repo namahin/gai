@@ -12,8 +12,7 @@
     <!-- ui kit stylesheet -->
     <link rel="stylesheet" href="css/uikit.min.css">
     <!-- material design iconic font stylesheet -->
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+    <link rel="stylesheet" href="css/material-design-iconic-font.min.css">
     <!-- custom stylesheet -->
     <link rel="stylesheet" href="css/mobilemenu.css">
     <link rel="stylesheet" href="css/main.css">
@@ -196,9 +195,9 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-8">
-                    <div class="blog-details">
-                        <iframe src="/img/Class%20Routine.pdf" frameborder="0"></iframe>
-                    </div>
+                    <div class="blog-details mb-50 pdf-viewer" id="citizenCharter"></div>
+                    <a href="img/Class Routine.pdf" class="gai-link-btn" download="">ডাউনলোড করুন <i
+                            class="zmdi zmdi-download"></i></a>
                 </div>
                 <div class="col-md-4">
                     <div class="blog-sidebar right">
@@ -422,7 +421,12 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/mobilemenu.js"></script>
     <script src="js/uikit.min.js"></script>
+    <script src="js/pdfobject.min.js"></script>
     <script src="js/main.js"></script>
+    <script>
+        PDFObject.embed("/img/Class%20Routine.pdf", "#citizenCharter");
+    </script>
+
 </body>
 
 </html>
