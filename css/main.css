@@ -5391,26 +5391,28 @@ textarea {
 }
 
 .gallery-slider-item {
-    padding: 0;
     overflow: hidden;
     position: relative;
-
+    padding: 0;
 }
 
 .gallery-slider-item a i {
     position: absolute;
     color: white;
-    font-size: 60px;
+    font-size: 50px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    transition: linear .5s;
-    text-shadow: 0 0 2px gray;
+    box-shadow: 0 0px 10px #28416F;
+    border-radius: 50%;
+    transition: linear .2s;
+    line-height: 0;
 }
 
-.gallery-slider-item a i:hover {
-    transition: linear .5s;
-    color: #1CC0EC;
+.gallery-slider-item:hover a i {
+    transition: linear .2s;
+    color: #2C2B5E;
+    box-shadow: none;
 }
 
 .gallery-slider-item span {
@@ -6980,18 +6982,17 @@ textarea {
     border: 1px solid #80808029;
     border-radius: 3px;
     overflow: hidden;
-    transform: scale(1);
     position: relative;
-    transition: linear .5s
+    transition: linear .5s;
+    box-shadow: 0 6px 10px #dcdcdc30;
 }
 
 .gellery-folder:hover {
-    transform: scale(1.1);
     transition: linear .5s
 }
 
 .gellery-folder-tn {
-    height: 150px;
+    height: 180px;
     overflow: hidden;
     position: relative;
     background: #fafafa;
@@ -7011,7 +7012,6 @@ textarea {
 }
 
 .gellery-folder p {
-    display: block;
     margin: 15px 10px;
     display: -webkit-box;
     -webkit-box-orient: vertical;
@@ -7019,12 +7019,14 @@ textarea {
     text-overflow: ellipsis;
     white-space: normal;
     -webkit-line-clamp: 2;
+    font-size: 16px;
+    margin-bottom: 3px;
 }
 
 .gellery-folder:hover p {
     color: #0078D7;
 }
-
+.gellery-folder h6{margin: 0px 10px;margin-bottom: 15px;font-size: 12px;color: gray;font-weight: 400;}
 /* ************************************************ */
 /* login page css */
 /* ************************************************ */
