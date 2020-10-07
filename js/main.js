@@ -69,6 +69,7 @@
     document.querySelector('.upload-result').style.display = 'block';
   };
 })();
+
 //code for cover image preview
 function previewImage(event) {
 
