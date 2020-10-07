@@ -309,7 +309,6 @@ a:focus {
     text-decoration: none;
 }
 
-a:focus,
 a:hover {
     color: #1CC0EC;
     text-decoration: none;
@@ -5104,7 +5103,8 @@ textarea {
     color: #1CC0EC;
 }
 
-.history-content p, .history-content article {
+.history-content p,
+.history-content article {
     font-size: 15px;
     color: #606060;
     margin-bottom: 10px;
@@ -7026,7 +7026,15 @@ textarea {
 .gellery-folder:hover p {
     color: #0078D7;
 }
-.gellery-folder h6{margin: 0px 10px;margin-bottom: 15px;font-size: 12px;color: gray;font-weight: 400;}
+
+.gellery-folder h6 {
+    margin: 0px 10px;
+    margin-bottom: 15px;
+    font-size: 12px;
+    color: gray;
+    font-weight: 400;
+}
+
 /* ************************************************ */
 /* login page css */
 /* ************************************************ */
@@ -7129,7 +7137,98 @@ textarea {
     background-color: #F6F8F8;
     width: 100%;
 }
-.pdf-viewer{
+
+.pdf-viewer {
     height: 780px;
     border: 1px solid #0000003b;
+}
+
+/* ***************************************** */
+/* class routine css */
+/* ***************************************** */
+.routine-switcher {}
+
+.routine-switcher .subnav {
+    text-align: center;
+}
+
+.routine-switcher .subnav li {
+    display: inline-block;
+    margin: 0 10px;
+    margin-bottom: 10px;
+}
+
+.routine-switcher .subnav li a {
+    font-size: 16px;
+    color: #fff;
+    background: #01BBE6;
+    line-height: 1;
+    padding: 8px 15px;
+    display: block;
+}
+
+.routine-switcher .subnav .uk-active a {
+    background: #2C2B5E;
+}
+
+.routine-switcher .uk-switcher {
+    margin-top: 25px;
+}
+
+.routine-box {
+    margin-bottom: 30px;
+}
+
+.routine-box h4 {
+    color: #2C2B5E;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.routine-box-view {
+    background-image: url(../img/dora.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 360px;
+    position: relative;
+}
+
+.routine-btn-group {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    width: 100%;
+}
+
+.routine-btn-group a {
+    display: block;
+    width: 50%;
+    text-align: center;
+    color: #fff;
+    background: #01BBE6;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.routine-btn-group a i {
+    margin-right: 5px;
+}
+
+.exam-box-view {
+    height: 280px;
+}
+
+.exam-box-view .routine-btn-group a {
+    width: 100%;
+    padding: 8px;
+    background: #2C2B5E;
+}
+
+.exam-box-view .routine-btn-group a:hover {
+    background: #01BBE6;
 }
