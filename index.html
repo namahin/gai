@@ -191,41 +191,25 @@
     </header>
     <!-- Header Area End -->
     <!-- banner Area Start -->
-    <section id="slider-container" class="slider-area three">
-        <div uk-slideshow="autoplay: true; animation: push; autoplay-interval: 3500; min-height: 300; max-height: 450;">
-            <ul class="uk-slideshow-items">
-                <li class="single-slide item" style="background-image: url(img/banner/rover.JPG)">
-                    <div class="slider-content-area">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-md-7">
-                                    <div class="slide-content">
-                                        <h2>গ্রাফিক আর্টস ইনস্টিটিউট রোভার স্কাউট গ্রুপ</h2>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-                <li class="single-slide item" style="background-image: url(img/banner/students.jpg)">
-                    <div class="slider-content-area">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-md-7">
-                                    <div class="slide-content">
-                                        <h2>বিশ্ব জুড়ে কর্ম মিলে!!</h2>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-            </ul>
-            <a class="uk-position-center-left uk-position-small uk-hidden-hover gai-nav" href="#" uk-slidenav-previous
-                uk-slideshow-item="previous"></a>
-            <a class="uk-position-center-right uk-position-small uk-hidden-hover gai-nav" href="#" uk-slidenav-next
-                uk-slideshow-item="next"></a>
+    <section id="slider-container" class="main-slider">
+
+        <div class="slider-item">
+            <img src="img/banner/banner.png">
         </div>
+
+        <div class="slider-item">
+            <img src="img/banner/rover.JPG">
+        </div>
+
+        <div class="slider-item">
+            <img src="img/banner/students.jpg">
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+
+
     </section>
     <!-- banner Area End -->
     <!-- INSTITUTION PROGRAMES start from here -->
